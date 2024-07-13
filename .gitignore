@@ -1,0 +1,8 @@
+archived/
+__pycache__/
+test.*
+max78000-firmware/build/
+*_bak
+*.db
+*.log
+test*

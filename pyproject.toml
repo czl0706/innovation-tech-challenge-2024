@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "innovation-tech-challenge-2024"
+version = "0.1.0"
+description = ""
+authors = ["Chengzong Li <chengzongli.ee10@nycu.edu.tw>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+keyboard = "^0.13.5"
+pyserial = "^3.5"
+numpy = "^1.26.4"
+torch = {version = "^2.3.1+cu121", source = "pytorch-gpu"}
+torchvision = {version = "^0.18.1+cu121", source = "pytorch-gpu"}
+paho-mqtt = "^2.1.0"
+streamlit = "^1.36.0"
+plotly = "^5.22.0"
+filterpy = "^1.4.5"
+scipy = "1.13"
+torchinfo = "^1.8.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+matplotlib = "^3.9.0"
+pandas = "^2.2.2"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
