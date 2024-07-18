@@ -12,5 +12,6 @@ if __name__ == "__main__":
         resolve_path("streamlit_app.py"),
         "--global.developmentMode=false",
         "--server.port=8888",
+        # " --server.headless true",
     ]
     sys.exit(stcli.main())

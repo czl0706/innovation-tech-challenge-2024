@@ -6,3 +6,4 @@ max78000-firmware/build/
 *.db
 *.log
 test*
+*.pptx

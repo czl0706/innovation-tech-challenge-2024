@@ -60,7 +60,7 @@ def plot_lng_history(df):
         #     'text': 'LNG 歷史記錄',
         #     'font': {'size': 24}  # 增大標題字體大小
         # },
-        xaxis_title='',
+        xaxis_title='第幾次測驗',
         yaxis_title='LNG (m)',
         hovermode='x unified',
         margin=dict(t=10, b=10, l=10, r=10)
@@ -97,7 +97,12 @@ def plot_prediction_data(pred_data):
     st.plotly_chart(fig)
 
 def main():
-    st.title("資料檢視平台")
+    st.set_page_config(
+        page_title="資料檢視平台 | 幼兒發育輔助系統",
+        page_icon="👶",
+    )
+
+    st.title("幼兒發育輔助系統 資料檢視平台")
     
     # 獲取並顯示 LNG 歷史記錄
     lng_history = get_lng_history()
